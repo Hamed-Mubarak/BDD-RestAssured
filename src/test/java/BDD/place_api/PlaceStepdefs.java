@@ -1,5 +1,7 @@
 package BDD.place_api;
 
+import BDD.utils.PlaceTestData;
+import BDD.utils.Specs;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,25 +9,28 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
-import BDD.resources.PlaceTestData;
-import BDD.resources.Utils;
+import java.io.IOException;
+
 import static io.restassured.RestAssured.*;
 
-public class PlaceStepdefs extends Utils {
+public class PlaceStepdefs extends Specs {
     RequestSpecification req;
     Response resp;
     String stringResp;
-    PlaceTestData data = new PlaceTestData();
+    PlaceTestData payload = new PlaceTestData();
+
+    public PlaceStepdefs() throws IOException {
+    }
 
     @Given("add place payLoad")
-    public void addPlacePayLoad() {
-        req = given().spec(addPlaceReqSpec()).body(data.addPlacePayLoad());
+    public void addPlacePayLoad() throws IOException {
+        req = given().spec(addPlaceReqSpec()).body(payload.addPlacePayLoad());
     }
 
     @When("call addPlaceAPI with post http request")
     public void callAddPlaceAPIWithPostHttpRequest() {
         resp = req.when().post("maps/api/place/add/json")
-                .then().spec(addPlaceRespSpec()).extract().response();
+                .then().extract().response();
     }
 
     @Then("called addPlaceAPI is success with status code")

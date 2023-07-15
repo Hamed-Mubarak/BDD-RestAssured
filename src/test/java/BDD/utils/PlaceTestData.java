@@ -1,4 +1,4 @@
-package BDD.resources;
+package BDD.utils;
 
 import pojo.AddPlaceBody;
 import pojo.LocationReq;
@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlaceTestData {
+
     public AddPlaceBody addPlacePayLoad(){
 
             AddPlaceBody a = new AddPlaceBody();
