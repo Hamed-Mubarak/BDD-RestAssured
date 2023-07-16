@@ -14,7 +14,7 @@ import java.util.Properties;
 public class Specs {
 
     public static RequestSpecification baseReq;
-    ConfigProperties config = new ConfigProperties("/Applications/1-Rabbit/API Course/API_RestAssured/BDD_RestAssured/BDD_RestAssured/src/test/java/BDD/utils/baseUrl.properties");
+    ConfigProperties config = new ConfigProperties("/Applications/1-Rabbit/API Course/API_RestAssured/BDD_RestAssured/BDD_RestAssured/resources/baseUrl.properties");
 
     public Specs() throws IOException {
     }

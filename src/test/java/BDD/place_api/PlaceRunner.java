@@ -5,7 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/java/BDD/place_api/place.feature",
-        glue = "BDD"
+        glue = "BDD",
+        tags = "@DeletePlace"
+
 )
 public class PlaceRunner extends AbstractTestNGCucumberTests{
 

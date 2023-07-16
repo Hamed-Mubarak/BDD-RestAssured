@@ -16,8 +16,7 @@ import static io.restassured.RestAssured.*;
 public class PlaceStepdefs extends Specs {
     RequestSpecification req;
     Response resp;
-    String stringResp;
-    String place_Id;
+    public static String place_Id;
 
     PlaceTestData payload = new PlaceTestData();
 
@@ -34,25 +33,26 @@ public class PlaceStepdefs extends Specs {
     public void callWithHttpRequest(String resource, String method) {
         APIResources resourceAPI = APIResources.valueOf(resource);
         if(method.equalsIgnoreCase("POST"))
-        resp = req.when().post(resourceAPI.getResource())
-                .then().extract().response();
+        {
+            if(resource.equalsIgnoreCase("addPlaceAPI"))
+            resp = req.when().post(resourceAPI.getResource());
+            else if (resource.equalsIgnoreCase("updatePlaceAPI"))
+                resp = req.when().post(resourceAPI.getResource());
+        }
         else if (method.equalsIgnoreCase("GET"))
-            resp = req.when().post(resourceAPI.getResource())
-                    .then().extract().response();
+            resp = req.when().get(resourceAPI.getResource());
         else if (method.equalsIgnoreCase("DELETE"))
-            resp = req.when().delete(resourceAPI.getResource())
-                    .then().extract().response();
-
+            resp = req.when().delete(resourceAPI.getResource());
     }
 
-    @Then("called addPlaceAPI is success with status code")
-    public void calledAddPlaceAPIIsSuccessWithStatusCode() {
-        Assert.assertEquals(resp.getStatusCode(),200);
+    @Then("called resource is with {string}")
+    public void calledResourceIsWith(String statusCode) {
+        Assert.assertEquals(String.valueOf(resp.getStatusCode()),statusCode);
     }
 
     @Then("{string} in response body is {string}")
-    public void inResponseBodyIs(String keyValue,String expectedValue) {
-        Assert.assertEquals(getJsonPath(resp,keyValue),expectedValue);
+    public void inResponseBodyIs(String property,String propValue) {
+        Assert.assertEquals(getJsonPath(resp,property),propValue);
     }
 
     @Then("validate place_Id created maps to {string} using {string}")
@@ -60,7 +60,12 @@ public class PlaceStepdefs extends Specs {
         place_Id=getJsonPath(resp,"place_id");
         req = given().spec(addPlaceReqSpec()).queryParam("place_id",place_Id);
         callWithHttpRequest(resource,"GET");
-        String respName= place_Id=getJsonPath(resp,"name");
-        Assert.assertEquals(name,respName);
+        Assert.assertEquals(getJsonPath(resp,"name"),name);
+    }
+
+    @Given("delete place payLoad")
+    public void deletePlacePayLoad() throws IOException {
+        req = given().spec(addPlaceReqSpec())
+                .body(payload.deletePlacePayload(place_Id));
     }
 }

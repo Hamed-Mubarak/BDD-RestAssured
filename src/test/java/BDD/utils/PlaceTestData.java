@@ -28,4 +28,7 @@ public class PlaceTestData {
             a.setLocation(l);
             return a;
     }
+    public String deletePlacePayload(String place_Id){
+            return "{\r\n    \"place_id\":\""+ place_Id +"\"\r\n}";
+    }
 }
