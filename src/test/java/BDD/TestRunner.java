@@ -1,4 +1,4 @@
-package BDD.place_api;
+package BDD;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -7,6 +7,6 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/java/BDD/place_api/place.feature",
         glue = "BDD"
 )
-public class PlaceRunner extends AbstractTestNGCucumberTests{
+public class TestRunner extends AbstractTestNGCucumberTests{
 
 }

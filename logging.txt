@@ -16,18 +16,18 @@ Body:
         "lng": 31.3063091
     },
     "accuracy": 50.0,
-    "name": "Mubarak",
+    "name": "Udemy",
     "phone_number": "01090074666",
-    "address": "Cairo",
+    "address": "Home",
     "types": [
         "Shoe Park",
         "shop"
     ],
     "website": "https://rahulshettyacademy.com",
-    "language": "Arabic"
+    "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Sun, 16 Jul 2023 04:25:32 GMT
+Date: Sun, 16 Jul 2023 05:03:05 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "0947c3f46501d6f880be3b81d75ea8d3",
+    "place_id": "542fce561cf2b9b5d1d1ece0cdaa50db",
     "scope": "APP",
-    "reference": "27de905778f897ef2ce3c853f88c9a9127de905778f897ef2ce3c853f88c9a91",
-    "id": "27de905778f897ef2ce3c853f88c9a91"
+    "reference": "7a8bf0f255e9da6f65d5f21c16022e397a8bf0f255e9da6f65d5f21c16022e39",
+    "id": "7a8bf0f255e9da6f65d5f21c16022e39"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=0947c3f46501d6f880be3b81d75ea8d3
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=542fce561cf2b9b5d1d1ece0cdaa50db
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=0947c3f46501d6f880be3b81d75ea8d3
+				place_id=542fce561cf2b9b5d1d1ece0cdaa50db
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,13 +59,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 16 Jul 2023 04:25:33 GMT
+Date: Sun, 16 Jul 2023 05:03:06 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
 Access-Control-Max-Age: 3600
 Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 233
+Content-Length: 231
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: application/json;charset=UTF-8
@@ -76,12 +76,12 @@ Content-Type: application/json;charset=UTF-8
         "longitude": "31.3063091"
     },
     "accuracy": "50",
-    "name": "Mubarak",
+    "name": "Udemy",
     "phone_number": "01090074666",
-    "address": "Cairo",
+    "address": "Home",
     "types": "Shoe Park,shop",
     "website": "https://rahulshettyacademy.com",
-    "language": "Arabic"
+    "language": "English"
 }
 Request method:	DELETE
 Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
@@ -96,10 +96,125 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "0947c3f46501d6f880be3b81d75ea8d3"
+    "place_id": "542fce561cf2b9b5d1d1ece0cdaa50db"
 }
 HTTP/1.1 200 OK
-Date: Sun, 16 Jul 2023 04:25:34 GMT
+Date: Sun, 16 Jul 2023 05:03:06 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": 29.9891544,
+        "lng": 31.3063091
+    },
+    "accuracy": 50.0,
+    "name": "Udemy",
+    "phone_number": "01090074666",
+    "address": "Home",
+    "types": [
+        "Shoe Park",
+        "shop"
+    ],
+    "website": "https://rahulshettyacademy.com",
+    "language": "English"
+}
+HTTP/1.1 200 OK
+Date: Sun, 16 Jul 2023 05:03:07 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "c67b7f6718955e250fe309d2fd082fed",
+    "scope": "APP",
+    "reference": "fdd8ba487e6a42ca3af3e5eac7b481ccfdd8ba487e6a42ca3af3e5eac7b481cc",
+    "id": "fdd8ba487e6a42ca3af3e5eac7b481cc"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=c67b7f6718955e250fe309d2fd082fed
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=c67b7f6718955e250fe309d2fd082fed
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 16 Jul 2023 05:03:07 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 231
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "29.9891544",
+        "longitude": "31.3063091"
+    },
+    "accuracy": "50",
+    "name": "Udemy",
+    "phone_number": "01090074666",
+    "address": "Home",
+    "types": "Shoe Park,shop",
+    "website": "https://rahulshettyacademy.com",
+    "language": "English"
+}
+Request method:	DELETE
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "c67b7f6718955e250fe309d2fd082fed"
+}
+HTTP/1.1 200 OK
+Date: Sun, 16 Jul 2023 05:03:08 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST

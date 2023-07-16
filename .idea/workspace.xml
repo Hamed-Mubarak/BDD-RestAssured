@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="905e53f4-f398-4eab-8e66-1894f4c8d10c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BDD/HooksHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BDD/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logging.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logging.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BDD/place_api/PlaceRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BDD/place_api/PlaceRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BDD/place_api/PlaceStepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BDD/place_api/PlaceStepdefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BDD/place_api/place.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BDD/place_api/place.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BDD/utils/ConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BDD/utils/ConfigProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BDD/utils/PlaceTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BDD/utils/PlaceTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BDD/utils/Specs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BDD/utils/Specs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BDD/utils/baseUrl.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/baseUrl.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +40,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Applications/1-Rabbit/API Course/API_RestAssured/BDD_RestAssured/BDD_RestAssured/src/main/java/pojo"
+    "last_opened_file_path": "/Applications/1-Rabbit/API Course/API_RestAssured/BDD_RestAssured/BDD_RestAssured/src/main/java/pojo",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -56,28 +53,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="BDD" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.PlaceRunner (1)">
-    <configuration name="Scenario: Validate Add Place API (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/BDD/place_api/place.feature" />
-      <option name="GLUE" value="BDD.place_api" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="BDD_RestAssured" />
-      <option name="NAME_FILTER" value="^Validate Add Place API$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Add Place API$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate Add Place API" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestRunner">
     <configuration name="Scenario: Validate Add Place API functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/BDD/place_api/place.feature" />
@@ -138,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaceRunner (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaceRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BDD_RestAssured" />
       <extension name="coverage">
         <pattern>
@@ -155,13 +135,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BDD_RestAssured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BDD.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BDD" />
+      <option name="MAIN_CLASS_NAME" value="BDD.TestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PlaceRunner (1)" />
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="TestNG.PlaceRunner" />
         <item itemvalue="Cucumber Java.Scenario: Validate Delete Place API functionality" />
         <item itemvalue="Cucumber Java.Scenario: Validate All Place API functionality" />
         <item itemvalue="Cucumber Java.Scenario: Validate Add Place API functionality" />
-        <item itemvalue="Cucumber Java.Scenario: Validate Add Place API (1)" />
       </list>
     </recent_temporary>
   </component>
